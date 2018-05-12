@@ -27,7 +27,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
 
-  bot.user.setActivity("Hector's Moderator Punishment System v2.0", {type: "PLAYING"});
+  bot.user.setActivity("Hector's Moderator Punishment System v3.0[BETA TEST]", {type: "PLAYING"});
 
 
 
