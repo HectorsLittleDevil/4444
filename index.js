@@ -135,6 +135,4 @@ if(cmd === `${prefix}ban`){
     return message.channel.send(botembed);
   }
 
-});
-
 bot.login(tokenfile.token);
