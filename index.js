@@ -46,6 +46,11 @@ bot.on("message", async message => {
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
 
+  if (message.content === '!help') {
+    let reply = `!ban\n!botinfo\n!clear\n!say\n!coins\n!userinfo\n!warn\n!warnlevel\n!kick\n!level\n!pay\n!prefix\n!removerole\n!report\n!serverinfo`;
+  message.channel.send(reply);
+  }
+
   if (cmd === `${prefix}kick`){
 
 //!kick @user Asking
@@ -72,12 +77,6 @@ bot.on("message", async message => {
 
     return;
   }
- 
-  if (message.content === '!help') {
-  let reply = `!ban\n!botinfo\n!clear\n!say\n!coins\n!userinfo\n!warn\n!warnlevel\n!kick\n!level\n!pay\n!prefix\n!removerole\n!report\n!serverinfo`;
-message.channel.send(reply);
-}
-});
 
 if(cmd === `${prefix}ban`){
 
@@ -134,5 +133,5 @@ if(cmd === `${prefix}ban`){
 
     return message.channel.send(botembed);
   }
-
+})
 bot.login(tokenfile.token);
