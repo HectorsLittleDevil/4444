@@ -72,6 +72,27 @@ bot.on("message", async message => {
 
     return;
   }
+  if (message.content === '!help') {
+  let sicon = message.guild.iconURL;
+  let helpembed = new Discord.RichEmbed()
+  .setDescription("~Komande~")
+  message.channel.send("``!ban``")
+  message.channel.send("``!botinfo``",)
+  message.channel.send("``!clear``",)
+  message.channel.send("``!say``",)
+  message.channel.send("``!coins``",)
+  message.channel.send("``!userinfo``",)
+  message.channel.send("``!warn``",)
+  message.channel.send("``!warnlevel``",)
+  message.channel.send("``!kick``",)
+  message.channel.send("``!level``",)
+  message.channel.send("``!pay``",)
+  message.channel.send("``!prefix``",)
+  message.channel.send("``!removerole``",)
+  message.channel.send("``!report``",)
+  message.channel.send("``!serverinfo``",)
+}
+});
 
 if(cmd === `${prefix}ban`){
 
