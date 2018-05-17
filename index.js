@@ -72,6 +72,7 @@ bot.on("message", async message => {
 
     return;
   }
+  
   if (message.content === '!help') {
   let reply = `!ban\n!botinfo\n!clear\n!say\n!coins\n!userinfo\n!warn\n!warnlevel\n!kick\n!level\n!pay\n!prefix\n!removerole\n!report\n!serverinfo`;
 message.channel.send(reply);
